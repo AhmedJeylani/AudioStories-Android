@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Global color attributes -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/darkGrey</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Global type attributes -->
+        <item name="textAppearanceButton">@style/TextAppearance.Button</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <!-- Button style attribute -->
+        <item name="materialButtonStyle">@style/AppButton</item>
+<!--        <item name="imageButtonStyle">@style/AppButton.Image</item>-->
+        <!-- Text widget style attribute -->
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="editTextStyle">@style/AppEditTextField</item>
+        <item name="android:textViewStyle">@style/AppTextView</item>
+        <!-- Progress bar style -->
+        <item name="progressBarStyle">@style/AppProgressBarHorizontal</item>
+        <!-- Action bar style-->
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <!-- AlertDialogue style-->
+        <item name="alertDialogStyle">@style/AlertDialogCustom</item>
+
+    </style>
+
+    <style name="AlertDialogCustom" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered">
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppButton.Greyed" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="backgroundTint">@color/lightGrey</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppButton.Image" parent="Widget.AppCompat.ImageButton">
+        <item name="backgroundTint">@color/colorAccent</item>"
+        <item name="android:background">@drawable/oval</item>
+    </style>
+
+    <style name="AppButton.ImageGreyed" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/oval_grey</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/textBackgroundColor</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppEditTextField" parent="Widget.AppCompat.EditText">
+        <item name="boxBackgroundColor">@color/textBackgroundColor</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppProgressBarHorizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorAccent">@color/colorAccent </item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <!-- remove shadow below action bar -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

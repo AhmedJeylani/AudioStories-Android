@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_panel_background_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/circeBorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/show_profile_image_id"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="19dp"
+                android:src="@drawable/profile_image_placeholder"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nav_email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_username_id"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nav_username_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circeBorder"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_panel_background_id">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_list__id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:divider="@color/lightGrey"
+            android:dividerHeight="1dp"
+            android:focusable="false"
+            android:padding="10dp"
+            android:scrollbars="vertical" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="10dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ic_add_white"
+            android:id="@+id/addBtn_id"
+            android:contentDescription="@string/add_story_btn" />
+
+        <include layout="@layout/empty_state"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "802950750372",
+    "firebase_url": "https://audiostories-574fe.firebaseio.com",
+    "project_id": "audiostories-574fe",
+    "storage_bucket": "audiostories-574fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802950750372:android:5136d17396597424",
+        "android_client_info": {
+          "package_name": "com.ahmedjeylani.audiostories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802950750372-tuujpqosv9drulstti5kb59k7v9gmfe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahmedjeylani.audiostories",
+            "certificate_hash": "5ba38327edeca5dc77bd3c0cf5c364063adec5f8"
+          }
+        },
+        {
+          "client_id": "802950750372-ckscjuhshct3tv5rcki4u1mk2fgkgltd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy-ZaY4sb0FOISoN5pp48kz9V6VYF16Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802950750372-ckscjuhshct3tv5rcki4u1mk2fgkgltd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

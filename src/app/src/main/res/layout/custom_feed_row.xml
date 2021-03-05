@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <RelativeLayout
+        android:id="@+id/customRowLayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homefeed"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:descendantFocusability="blocksDescendants"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feed_image_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/profile_image_placeholder"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feed_username_id"
+            android:text="@string/feed_username"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/feed_image_id"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/feed_info_id"
+            android:text="@string/audio_story_1nfo"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/feed_image_id"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/feed_username_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feed_date_id"
+            android:text="@string/audio_story_date"
+            android:textSize="14sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_play_media_blue"
+            style="@style/AppButton.Image"
+            android:layout_below="@+id/feed_info_id"
+            android:layout_marginTop="20dp"
+            android:id="@+id/play_button_id"
+            android:contentDescription="@string/audio_story_play_btn" />
+
+        <ProgressBar
+            android:id="@+id/feed_audio_progressbar_id"
+            style="@style/AppProgressBarHorizontal"
+            android:theme="@style/AppProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_info_id"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@+id/play_button_id"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/play_button_id"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/noRecordings_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_index_stories"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/addRecording_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mic_blue"
+                android:src="@drawable/ic_mic_blue"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/audio_story_listens_count" />
+
+            <TextView
+                android:id="@+id/noLikes_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_index_stories"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="5dp"
+                android:id="@+id/like_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_thumb_up_blue"
+                android:src="@drawable/ic_thumb_up_blue"
+                android:visibility="gone"
+                android:contentDescription="@string/audio_story_like_btn" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleFeed"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homefeed"
+        android:elevation="10dp"
+        android:padding="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/play_all_btn"
+            android:id="@+id/play_all_button_id"
+            android:layout_marginBottom="5dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/single_feed_image_id"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/oval_image_background"
+            android:src="@mipmap/ic_default_user_image_icon"
+            android:layout_below="@id/play_all_button_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_feed_username_id"
+            android:text="@string/username_audio_story"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/single_feed_image_id"
+            android:layout_below="@id/play_all_button_id" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_feed_info_id"
+            android:text="@string/audio_story_1nfo"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/single_feed_image_id"
+            android:layout_below="@+id/single_feed_username_id"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_feed_date_id"
+            android:text="@string/audio_story_date"
+            android:textSize="14sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/single_feed_username_id"
+            android:textAlignment="textEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/play_all_button_id"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/single_feed_info_id"
+            android:background="@drawable/ic_play_media_white"
+            style="@style/AppButton.Image"
+            android:layout_marginTop="20dp"
+            android:id="@+id/single_feed_play_button_id"
+            android:contentDescription="@string/audio_story_play_btn" />
+
+        <ProgressBar
+            android:id="@+id/single_feed_audio_progressbar_id"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:theme="@style/AppProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_feed_info_id"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@+id/single_feed_play_button_id" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/single_feed_list"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="10dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ic_add_white"
+            android:id="@+id/single_feed_addBtn_id"
+            android:contentDescription="@string/add_story_btn" />
+
+        <include layout="@layout/empty_state"/>
+    </RelativeLayout>
+
+</LinearLayout>

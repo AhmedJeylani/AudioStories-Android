@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/customRowLayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:descendantFocusability="blocksDescendants"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/story_feed_image_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/profile_image_placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/story_feed_username_id"
+            android:text="@string/username_audio_story"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/story_feed_image_id"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/story_feed_info_id"
+            android:text="@string/audio_story_1nfo"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/story_feed_image_id"
+            android:layout_below="@+id/story_feed_username_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/story_feed_date_id"
+            android:text="@string/audio_story_date"
+            android:textSize="14sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap"
+            />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_play_media_white"
+            android:layout_below="@+id/story_feed_info_id"
+            android:layout_marginTop="15dp"
+            style="@style/AppButton.Image"
+            android:id="@+id/story_play_button_id"
+            android:contentDescription="@string/audio_story_play_btn" />
+
+        <ProgressBar
+            android:id="@+id/story_feed_audio_progressbar_id"
+            style="@style/AppProgressBarHorizontal"
+            android:theme="@style/AppProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/story_feed_info_id"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/story_play_button_id"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/story_play_button_id"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/story_noLikes_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_index_stories"
+                android:textSize="16sp"
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_marginStart="5dp"
+                android:id="@+id/story_like_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_thumbs_up_white"
+                android:src="@drawable/ic_thumb_up_blue"
+                android:visibility="gone"
+                android:contentDescription="@string/audio_story_like_btn" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

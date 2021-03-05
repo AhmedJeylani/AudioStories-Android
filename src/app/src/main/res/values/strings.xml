@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Audio Stories</string>
+
+    <!-- Strings related to ActionBar names -->
+    <string name="home_activity">HOME</string>
+    <string name="login_activity">LOGIN</string>
+    <string name="register_activity">REGISTER</string>
+    <string name="reset_password_activity">FORGOT PASSWORD</string>
+    <string name="profile_activity">PROFILE</string>
+    <string name="edit_profile_activity">EDIT ACCOUNT</string>
+    <string name="story_activity">STORY</string>
+    <string name="create_audio_activity">CREATE AUDIO</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_log_in_short">Log in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="profile_page">profile</string>
+    <string name="edit_profile_page">edit account</string>
+    <string name="edit_link">edit</string>
+    <string name="reset_password_btn">reset password</string>
+    <string name="update_image">update profile image</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logging_in_loading">Logging In…</string>
+    <string name="edit_pencil_image">Edit pencil</string>
+    <string name="forgotten_password_on_login">Forgotten Password?</string>
+    <string name="account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="your_email_to_reset_password">Resetting your password is easy, just tell us the email address you registered with.</string>
+    <string name="registered_user_email">Email</string>
+    <string name="user_reset_password_btn">Reset Password</string>
+    <string name="play_all_btn">Play All</string>
+    <string name="username_audio_story">Username</string>
+    <string name="audio_story_1nfo">1nfo</string>
+    <string name="audio_story_date">Date</string>
+    <string name="audio_story_play_btn">audio story play button</string>
+    <string name="add_story_btn">add story button</string>
+    <string name="audio_story_send_btn">audio story send button</string>
+    <string name="send_btn">Send</string>
+    <string name="in_app_logo">The in-app logo</string>
+    <string name="sign_up_btn">REGISTER</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="register_name">Name</string>
+    <string name="register_password">Password</string>
+    <string name="register_re_enter_password">Re-Enter Password</string>
+    <string name="audio_story_like_btn">audio story like button</string>
+    <string name="audio_story_listens_count">audio story listens</string>
+    <string name="feed_username">Username</string>
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="zero_index_stories">0</string>
+    <string name="registering_loading">REGISTERING...</string>
+    <string name="no_audio_stories">You have no Audio Stories</string>
+    <string name="create_audio_story">Create your first Audio Story</string>
+    <string name="alert_info_title">Information</string>
+    <string name="alert_supp_msg">Describe your new story</string>
+</resources>

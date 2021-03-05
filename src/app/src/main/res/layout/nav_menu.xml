@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_profileImage_id"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/profile_image_placeholder" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_audio_story"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:paddingBottom="4dp"
+        android:id="@+id/nav_username_id"
+        android:layout_above="@+id/nav_email_id"
+        android:layout_alignStart="@+id/nav_profileImage_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registered_user_email"
+        android:id="@+id/nav_email_id"
+        android:gravity="start"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nav_username_id" />
+
+</RelativeLayout>

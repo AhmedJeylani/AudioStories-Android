@@ -1,0 +1,12 @@
+<!-- Menu file for `activity_movies.xml` is located in a file 
+     such as `res/menu/menu_movies.xml`  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_edit_icon"
+        android:icon="@drawable/ic_edit_icon"
+        app:showAsAction="ifRoom|withText"
+        android:onClick="clickEditPage"
+        android:title="@string/menu_edit_profile">
+    </item>
+</menu>
